@@ -1,3 +1,5 @@
+// menutest.vala
+
 using Gtk;
 
 public class Menutest : Gtk.Application {
