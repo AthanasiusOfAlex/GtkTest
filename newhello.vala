@@ -18,8 +18,13 @@ public class Menutest : Gtk.Application {
         window_menu.insert(0, "Hello", "app.hello");
         window_menu.insert(1, "Quit", "app.quit");
 
+        var edit_menu = new Menu();
+        edit_menu.insert(0, "Copy Hello", "app.hello");
+        edit_menu.insert(0, "Paste Hello", "app.hello");
+
         // Add window submenu to menu bar
         menu.append_submenu ("Window", window_menu);
+        menu.append_submenu ("Edit", edit_menu);
         
         // Set the menu as the application's menubar
         this.set_menubar(menu);
