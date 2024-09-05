@@ -16,7 +16,7 @@ public class Menutest : Gtk.Application {
         // Create window submenu and insert (The "Window" entry you'll see in the menu bar)
         var window_menu = new Menu ();
         window_menu.insert(0, "Hello", "app.hello");
-        window_menu.insert(1, "Quit", "app.quit");
+        //window_menu.insert(1, "Quit", "app.quit");
 
         var edit_menu = new Menu();
         edit_menu.insert(0, "Copy Hello", "app.hello");
